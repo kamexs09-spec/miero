@@ -1,0 +1,57 @@
+@charset "utf-8";
+.header {position: absolute;top:0px;}
+.gnb{
+  position:absolute;
+  top:80px;right:3%;
+  background-color: var(--f_color02);
+  width:94%;
+  display: none;
+  box-shadow: 0px 5px 10px rgba(3,3,3,.2);
+  padding-bottom:10px;
+  z-index:9000;
+}
+.gnb > ul{
+  display:flex;
+  justify-content: flex-end;
+  flex-direction:column
+}
+.gnb > ul > li{
+  margin:0px 14px;
+  line-height:40px;
+  position: relative;
+  text-align: center;
+}
+.gnb > ul > li > a{
+  color:var(--f_color02);
+  font-size:var(--f_size03); /* 17 */
+}
+
+.gnb > ul > li:last-child a{
+  background:var(--bg_color01);
+  color:#ffffff;
+  border:none !important;
+  display: block;
+}
+
+.gnb > ul > li:last-child a:hover{
+  background:var(--bg_color02) !important;
+  color:var(--bg_color01) !important;
+  border:none !important;
+}
+
+/* 서브메뉴 보이는 서식 */
+.act{display: block !important;}
+/* 서브메뉴화살표돌리기 */
+.rotate{transform: rotate(180deg) !important}
+
+
+/*푸터영역 서식  */
+footer{
+  width:100%;
+  color:#fff;
+  background: #222222;
+}
+footer > p{text-align: center;line-height: 60px;}
+footer > p > a{
+  text-decoration: none;
+}
